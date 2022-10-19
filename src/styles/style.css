@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Monda:wght@400;700&family=Montserrat&display=swap');
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    --primary-rgba: rgba(255, 255, 255, 0.8);
+    --primary-rgba-2: rgba(155, 155, 155, 0.8);
+    --neutral-dark-rgba: rgba(41, 48, 48, 0.8);
+    --primary-05: #a9d0dc;
+    --primary-10: #9cc6dc;
+    --primary-50: #46cfdc;
+    --primary-60: #2f849e;
+    --primary-70: #164259;
+    --primary-100: #152024;
+    --secondary-10: #feecae;
+    --secondary-20: #fde17c;
+    --secondary-50: #e4c825;
+    --secondary-60: #b4a415;
+    --secondary-70: #80780e;
+    --neutral-grey-00: #f3f3f3;
+    --neutral-grey-10: #edf1ee;
+    --neutral-grey-20: #d9dcdb;
+    --neutral-grey-40: #afb2b2;
+    --neutral-grey-50: #9ba1a1;
+    --neutral-grey-60: #818888;
+    --neutral-grey-70: #535757;
+    --neutral-grey-80: #353838;
+    --neutral-grey-90: #202121;
+    --neutral-grey-100: #1d1e1e;
+    --warning-dark: #f5954d;
+    --warning-light: #fac69d;
+    --error-dark: #d92736;
+    --error-light: #f75859;
+    --success-dark: #4ed27b;
+    --success-light: #82f2a2;
+    --info-dark: #6294be;
+    --info-light: #94c1df;
+    --primary-font: "Monda";
+    --secondary-font: "Montserrat";
+    --body-font: "Kanit";
+
+    background: var(--neutral-grey-00);
+    height: 100%;
+    width: 100%;
+    color: var(--neutral-grey-80);
+    font-size: 1rem;
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4em;
+}
+
+*::-moz-selection {
+    background: var(--primary-70);
+    color: var(--neutral-grey-10);
+}
+
+*::selection {
+    background: var(--primary-70);
+    color: var(--neutral-grey-10);
+}
+
+.Contact h1::selection {
+    background: var(--neutral-grey-10);
+    color: var(--primary-70)
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--neutral-grey-00);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-60);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-70);
+}
+
+/* Base Styles */
+main {
+    height: 86vh;
+    margin: 0 12rem 0;
+}
+
+a {
+    outline: 0;
+    color: var(--primary-60);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 500;
+    padding: 0.5em 0;
+    font-family: var(--primary-font);
+}
+
+h1 {
+    margin: 0;
+    color: var(--primary-70);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    color: var(--primary-60);
+    font-size: 2.2rem;
+}
+
+h3 {
+    margin: 0;
+    color: var(--primary-50);
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 560px) {
+    h1, h2, h3 {
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+hr {
+    width: 60%;
+    color: var(--secondary-70);
+}
+
+
+/* 404 - Page Not Found styling */
+.not-found {
+    height: 86vh;
+}
+
+
+/* Navbar styling */
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin: 0;
+    background-color: var(--neutral-grey-20);
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 7vh;
+}
+
+.Navbar ul {
+    margin: 0.5em;
+    list-style: none;
+    padding: 0;
+}
+
+.Navbar ul li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 0.4em;
+    font-size: 1.2em;
+    margin: 0 0.4em;
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-70);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.Navbar ul li a:hover {
+    color: var(--primary-60);
+}
+
+
+/* Footer styling */
+.Footer {
+    height: 7vh;
+    background-color: var(--neutral-grey-20);
+    color: var(--neutral-grey-100);
+    font-size: 1.7em;
+}
+
+
+/* Map styling */
+.leaflet-container {
+    width: 100vw;
+    height: 86vh;
+}
