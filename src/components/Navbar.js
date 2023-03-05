@@ -2,9 +2,9 @@ const Header = () => {
     return (
         <header className="Navbar">
             <ul className="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/map">Map</a></li>
-                <li><a href="/charts">Charts</a></li>
+                <li><a href="/">Map</a></li>
+                <li><a href="/stats">Charts</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
         </header>
     )

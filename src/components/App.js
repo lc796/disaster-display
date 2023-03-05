@@ -12,8 +12,8 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" exact element={ <About/> } />
-                <Route path="/map" element={ <Map/> } />
+                <Route path="/" exact element={ <Map/> } />
+                <Route path="/about" element={ <About/> }/>
                 <Route path="/stats" element={ <Stats/> } />
                 <Route path="*" element={ <PageNotFound/> } />
             </Routes>
