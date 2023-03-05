@@ -7,9 +7,9 @@
 }
 
 body {
-    --primary-rgba: rgba(255, 255, 255, 0.8);
-    --primary-rgba-2: rgba(155, 155, 155, 0.8);
-    --neutral-dark-rgba: rgba(41, 48, 48, 0.8);
+    --primary-rgba: rgba(255, 255, 255, 0.7);
+    --primary-rgba-2: rgba(155, 155, 155, 0.7);
+    --neutral-dark-rgba: rgba(41, 48, 48, 0.7);
     --primary-05: #a9d0dc;
     --primary-10: #9cc6dc;
     --primary-50: #46cfdc;
@@ -21,16 +21,17 @@ body {
     --secondary-50: #e4c825;
     --secondary-60: #b4a415;
     --secondary-70: #80780e;
-    --neutral-grey-00: #f3f3f3;
-    --neutral-grey-10: #edf1ee;
+    --neutral-grey-00: #F2EFE9;
+    --neutral-grey-10: #eeeaea;
     --neutral-grey-20: #d9dcdb;
     --neutral-grey-40: #afb2b2;
     --neutral-grey-50: #9ba1a1;
     --neutral-grey-60: #818888;
     --neutral-grey-70: #535757;
     --neutral-grey-80: #353838;
-    --neutral-grey-90: #202121;
-    --neutral-grey-100: #1d1e1e;
+    --neutral-grey-90: #222322;
+    --neutral-grey-95: #181818;
+    --neutral-grey-100: #050605;
     --warning-dark: #f5954d;
     --warning-light: #fac69d;
     --error-dark: #d92736;
@@ -43,7 +44,7 @@ body {
     --secondary-font: "Montserrat";
     --body-font: "Kanit";
 
-    background: var(--neutral-grey-00);
+    background: var(--neutral-grey-10);
     height: 100%;
     width: 100%;
     color: var(--neutral-grey-80);
@@ -68,11 +69,6 @@ body {
     color: var(--neutral-grey-10);
 }
 
-.Contact h1::selection {
-    background: var(--neutral-grey-10);
-    color: var(--primary-70)
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -94,11 +90,14 @@ body {
 main {
     height: 86vh;
     margin: 0 12rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a {
     outline: 0;
-    color: var(--primary-60);
+    color: var(--info-dark);
 }
 
 h1, h2, h3 {
@@ -123,7 +122,7 @@ h2 {
 
 h3 {
     margin: 0;
-    color: var(--primary-50);
+    color: var(--neutral-grey-90);
     font-size: 1.5rem;
 }
 
@@ -158,6 +157,9 @@ hr {
 
 /* 404 - Page Not Found styling */
 .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 86vh;
 }
 
@@ -170,7 +172,7 @@ hr {
     align-items: center;
     padding: 0.5em;
     margin: 0;
-    background-color: var(--neutral-grey-20);
+    background-color: var(--neutral-grey-00);
     font-family: var(--primary-font);
     width: 100%;
     height: 7vh;
@@ -205,8 +207,8 @@ hr {
 /* Footer styling */
 .Footer {
     height: 7vh;
-    background-color: var(--neutral-grey-20);
-    color: var(--neutral-grey-100);
+    background-color: var(--neutral-grey-00);
+    color: var(--neutral-grey-90);
     font-size: 1.7em;
 }
 
@@ -215,4 +217,30 @@ hr {
 .leaflet-container {
     width: 100vw;
     height: 86vh;
+}
+
+.map-card {
+    background-color: var(--neutral-grey-10);
+    box-shadow: -3px 3px 15px 2px var(--neutral-dark-rgba);
+}
+
+.SearchFilter {
+    min-width: 220px;
+    min-height: 170px;
+    border-radius: 0.8rem;
+    z-index: 400;
+    position: absolute;
+    bottom: 7vh;
+    margin: 1rem;
+    padding: 1em;
+}
+
+.SearchFilter select {
+    background-color: var(--neutral-grey-00);
+    border: 0;
+    outline: 0;
+}
+
+.SearchFilter select option {
+    color: var(--neutral-grey-90);
 }
