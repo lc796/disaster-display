@@ -1,4 +1,5 @@
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
+import SearchFilter from "./SearchFilter";
 
 const Map = () => {
     return (
@@ -14,6 +15,7 @@ const Map = () => {
                     </Popup>
                 </Marker>
             </MapContainer>
+            <SearchFilter />
         </div>
     )
 }
