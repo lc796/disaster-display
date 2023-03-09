@@ -12,6 +12,8 @@ const Map = () => {
     const { data: disasters, error } = useFetch("http://127.0.0.1:8000/api/data/");
 
     const countDisasters = (disasters) => {
+        error ? console.log(error) : console.log("No error");
+
         const countryDisasterCounts = {};
         let totalDisasterCount = 0
 
